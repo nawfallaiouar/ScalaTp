@@ -3,7 +3,7 @@ package config
 import scopt.{DefaultOParserSetup, OParserBuilder, OParserSetup}
 
 
-case class ConfigParser(inputPath: String = "C:\\Users\\nlaio\\Documents\\Programmation\\ScalaTp\\data.csv", inputFormat: String = "csv", outputFormat: String = "csv" , outputPath: String = "C:\\Users\\nlaio\\Documents\\Programmation\\ScalaTp\\ResultData.csv", service: String = "service1", clientId : String ="292494523"  )
+case class ConfigParser(inputPath: String = "ScalaTp\\data.csv", inputFormat: String = "csv", outputFormat: String = "csv" , outputPath: String = "ScalaTp\\ResultData.csv", service: String = "service1", clientId : String ="292494523"  )
 
 object ConfigParser {
 
@@ -23,7 +23,7 @@ object ConfigParser {
       opt[String]("inputPath")
         .required()
         .action((x, c) => c.copy(inputPath = x))
-        .text("C:\\Users\\nlaio\\Documents\\Programmation\\ScalaTp\\data.csv"),
+        .text("ScalaTp\\data.csv"),
 
       opt[String]("inputFormat")
         .required()
@@ -33,7 +33,7 @@ object ConfigParser {
       opt[String]("outputPath")
         .required()
         .action((x, c) => c.copy(outputPath = x))
-        .text("C:\\Users\\nlaio\\Documents\\Programmation\\ScalaTp\\ResultData.csv"),
+        .text("ScalaTp\\ResultData.csv"),
 
       opt[String]("outputFormat")
         .required()

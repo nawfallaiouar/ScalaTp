@@ -1,4 +1,4 @@
-name := "untitled2"
+name := "ScalaTp"
 
 version := "0.1"
 
